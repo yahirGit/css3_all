@@ -1,0 +1,22 @@
+h1,h2,h3,h4,h5,h6{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    color: indigo;
+}
+.contenedor a{
+    text-decoration: none;
+    color: firebrick;
+}
+/* selector de hijo */
+.contenedor>a {
+    font-size: 20px;
+    font-weight: bold;
+}
+/*Selector de hermano adyacente*/
+h2+p{
+    color: gold;
+}
+/*Selector de virgulilla*/
+h3~p{
+    color: purple;
+}

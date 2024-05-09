@@ -1,0 +1,12 @@
+h1 {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    text-transform: uppercase;
+
+}
+.prueba{
+    text-transform: lowercase;
+}

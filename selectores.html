@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+
+
+    <style>
+        nav{
+            background: #c6c6c6;
+            text-align: center;
+            border: 1px solid black;
+        }
+        section .titulo{
+            text-align: center;
+        }
+        h2{
+            color: blue;
+    
+        }
+        #section{
+            border-bottom: 2px solid black;
+        }
+        .😎{
+            color: darkblue;
+        }
+        .🙂{
+            border: 1px solid black;
+            font-size: 20px;
+        }
+        [href]{
+            text-decoration: none;
+            color: black;
+        }
+        a[href="https://alexcgdesing.com/inicio"]{
+            color: red;
+        }
+        a[href^="hsttps"]{
+            color: green;
+        }
+        a[href$="org"]{
+            background: #000000;
+            color: white;
+        }
+        a[href*="alexcgdesing"]{
+            background: darkcyan;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav class="nav_bar">
+        <section>
+            <h2>Soy un menu de navegacion</h2>
+        </section>
+    </nav>
+    <br>
+    <section id="section">
+        <h2 class="titulo">
+            mi primer blog
+        </h2>
+        <p class="😎 🙂">
+            Soy un parrafo😎
+        </p>
+    </section>
+    <br>
+    <br>
+    <a href="https://alexcgdesing.com/inicio">inicio</a>
+    <a href="https://alexcgdesing12.com">Acerca de</a>
+    <a href="hsttps://gmail.com">Gmail</a>
+    <a href="https://facebook.org">Facebook</a>
+    <a href="hsttps://google.com">Google</a>
+    <a>Soy un ancla sin la propiedad href</a>
+    
+</body>
+</html>
