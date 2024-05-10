@@ -1,0 +1,88 @@
+/*
+Usando algunos trucos de CSS y flexbox hemos podido recrear una explicacion
+del modelo de caja para ir realizando el ejemplo e ir aprendiendo al mismo tiempo
+de que trata el Box Model.
+*/
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.fondo{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: min-content;
+    
+}
+.box {
+    /* border: 1px solid black; */
+    padding: 1rem;
+    border: 1rem solid aqua;
+    margin: 10px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 100px;
+    text-align: center;
+
+    
+    background-clip: content-box, padding-box;
+    background-image:linear-gradient(
+        to bottom,
+         rgb(240, 255, 36) 0%,
+         rgba(240, 255, 40, 1) 100%), 
+         linear-gradient(to bottom,
+          rgba(240, 40, 40, 1) 0%,
+          rgba(240, 40, 40, 1) 100%);
+
+}
+
+.box1 {
+    background-color: steelblue;
+}
+
+.box2 {
+    background-color: tomato;
+}
+
+.box_m_1 {
+    background-color: indigo;
+    margin: 2px 10px 10px 15px;  
+}
+
+.box_m_2 {
+    background-color: springgreen;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+hgroup {
+    text-align: center;
+}
+
+hgroup h1,
+h2 {
+    margin: 1rem 1rem;
+}
+
+p {
+    margin: 1rem;
+    text-align: justify;
+}
+
+* {
+    margin: 0;
+}
+
+hr {
+    margin: 1rem 0;
+}

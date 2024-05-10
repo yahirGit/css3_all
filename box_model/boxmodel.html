@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice CSS3 Box model</title>
+    <link rel="stylesheet" href="boxmodel.css">
+
+    <style type="text/css">
+        
+    </style>
+</head>
+
+<body>
+    <hgroup>
+        <h1>css_all box model</h1>
+        <h2>hablaremos del modelo de caja. lo fundamental</h2>
+    </hgroup>
+    <p>
+        El modelo de caja se entiene como el comportamiento de las etiquetas html dentro de un documento html,
+        toda etiqueta html tiene por defento una propiedad display que establece como se debe comportar esa etiqueta
+        display: block display:inline suelen ser los valores por defecto para todas las etiquetas html.
+    </p>
+    <p>
+        Pero esto establece que cada etiqueta se comportar como una caja en si, es decir cada contenido que este dentro
+        de una etiqueta html
+        esta establecido en un recuadro encerrado para ese contenido que define su tamaño ya sea de manera explicita es
+        decir nosotros le asignamos un alto y un ancho,
+        o implicita donde el navegador decide ese tamaño.
+    </p>
+    <div class="container">
+        <section class="fondo">
+            <div class="box box1">Contenido caja 1</div>
+            <div class="box box2">Contenido cada 2</div>
+        </section>
+    </div>
+    
+    <hr>
+
+    <section>
+        <hgroup>
+            <h1>css_all box model</h1>
+            <h2>hablaremos del modelo de caja. Margin</h2>
+        </hgroup>
+        <p>
+            El <code>Margin</code> Establece un espacio entre las etiquetas contiguas
+            este espaciado puede ser en valores positivos o negativos.
+        </p>
+        <p>
+            La propiedad <code>margin</code> tiene una caracteristica es una propiead Shorthand lo cual permite
+            definir el espaciado en todos los sentido en dos dimenciones es decir puedes
+            aplicar margen top,right,bottom,left = superior,derecho,inferior,izquierdo en ese orden, existen otras propiedades css que tienen esa caracteristica. <code>margin</code>
+        </p>
+        <p>
+            Asi se aplican un margen usando la caracteristica de Shorthand.
+            <pre>
+                <code>h1{
+                    margin: top right bottom left;
+                    margin: 2px 10px 10px 15px;    
+                }</code>
+            </pre>
+            <pre>
+                <code>h1{
+                    margin: top right bottom left;
+                    margin-top: 50px;
+                    margin-right: 10px;
+                    margin-bottom: 50px;
+                    margin-left: 50px;
+                }</code>
+            </pre>
+        </p>
+        <div class="box box_m_1"></div>
+        <div class="box box_m_2"></div>
+    </section>
+
+
+</body>
+
+</html>
