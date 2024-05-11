@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Practice CSS3 Box model</title>
     <link rel="stylesheet" href="boxmodel.css">
 
@@ -35,9 +35,31 @@
             <div class="box box2">Contenido cada 2</div>
         </section>
     </div>
+    <P>
+        La combinación de colores anterior significa:
+        <ul>
+            <li>
+                <div class="list_small toBlack"></div>
+                El color black representa el <code>margin</code> del modelo de caja.
+            </li>
+            <li>
+                <div class="list_small toAqua"></div>
+                El color aqua representa el <code>border</code> del modelo de caja.
+            </li>
+            <li>
+                <div class="list_small toRed"></div>
+                El color red representa el <code>padding</code> del modelo de caja.
+            </li>
+            <li>
+                <div class="list_small toYellow"></div>
+                El color yellow representa el tamaño del contenido del modelo de caja.
+            </li>
+        </ul>
+    </P>
     
     <hr>
 
+    <!-- Margin -->
     <section>
         <hgroup>
             <h1>css_all box model</h1>
@@ -55,13 +77,13 @@
         <p>
             Asi se aplican un margen usando la caracteristica de Shorthand.
             <pre>
-                <code>h1{
+                <code>box_m_1{
                     margin: top right bottom left;
                     margin: 2px 10px 10px 15px;    
                 }</code>
             </pre>
             <pre>
-                <code>h1{
+                <code>box_m_2{
                     margin: top right bottom left;
                     margin-top: 50px;
                     margin-right: 10px;
@@ -72,7 +94,101 @@
         </p>
         <div class="box box_m_1"></div>
         <div class="box box_m_2"></div>
+        <p>
+            Claro que exiten cosas a tener en cuenta con esta caracteristica.
+            si usamos solo un valor en la propiedad margin, tomara este valor para todos sus lados. 
+            <code>
+                <pre>
+                    margin: 100PX;
+                </pre>
+            </code>
+        </p>
+        <p>
+            como en el ejemplo siguiente que todos los margenes de la siguiente caja tienen un valor de 100 px.
+        </p>
+        <div class="box box_m_1_valor">
+        </div>
     </section>
+    <hr>
+
+    <!-- Padding -->
+    <section>
+        <hgroup>
+            <h1>css_all box model</h1>
+            <h2>hablaremos del modelo de caja. padding</h2>
+        </hgroup>
+        <p>
+            El padding es el espaciado que tiene un elemento internamente es decir no es como el margin que puede afectar directamente a los alementos adyacentes, el padding establece un espaciado interno para afectar el contenido de la etiqueta.
+        </p>
+        <p>lo veremos mejor con un ejemplo</p>
+        <div class="box_sin_padding">
+            Este es el contenido de esta caja <strong>sin padding</strong> 
+        </div>
+        <div class="box_con_padding">
+            Este es el contenido de esta caja <strong>con padding</strong>
+        </div>
+        <p>
+            el color amarillo de la segunda caja de arriba hacia abajo, representa el tamaño del espaciado padding.
+        </p>
+        <p>
+            cabe aclarar que la propiedad padding tiene la caracteristica de ser un Shorthand como el margin.
+        </p>
+        
+    </section>
+    <hr>
+
+    <!-- Border -->
+    <section>
+        <hgroup>
+            <h1>css_all box model</h1>
+            <h2>hablaremos del modelo de caja. Border</h2>
+        </hgroup>
+        <p>
+            El border es una propiedad interesante del modelo de caja ya que se puede jugar mucho con esta propiedad para crear efectos esteticos muy impresionantes.
+        </p>
+        <p>
+            De forma basica un border en el modelo de caja representa un espacio que rodea todo el contenido de la
+            caja y se suma al tamaño total de la caja, la sintaxis básica es la siguiente.
+        </p>
+
+        <pre>
+            <code>
+                border: 5px solid black;
+            </code>
+        </pre>
+        <p>
+            En la siguiente caja veremos como se aplica el borde del ejemplo anterior.
+        </p>
+        <div class="box_con_border">
+
+        </div>
+        <p>
+            la propiedad border tambien tiene la caracteristica de ser un shorthand pero a diferencia del margin y padding,
+            esta propiedad comprime el ancho, estilo y color del borde como lo vimos en el ejemplo de codigo anterior, pudiendo definir cada borde por separado es decir un borde superior, derecho, inferior y izquierdo del modelo de la caja.
+        </p>
+        <pre>
+            <code>
+                border-top: 5px solid black;
+                border-right: 5px solid black;
+                border-bottom: 5px solid black;
+                border-left: 5px solud black;
+            </code>
+        </pre>
+        
+    </section>
+    <hr>
+
+    <section id="bandera">
+        <p>
+            crear bandera usando div
+        </p>
+            <div class="ban_size ban_1"></div>
+            <div class="ban_size ban_2"></div>
+            <div class="ban_size ban_3"></div>
+            <h2>colombia</h2>
+    </section>
+
+
 
 
 </body>

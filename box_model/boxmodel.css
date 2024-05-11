@@ -4,6 +4,10 @@ del modelo de caja para ir realizando el ejemplo e ir aprendiendo al mismo tiemp
 de que trata el Box Model.
 */
 
+
+
+
+/* ------ 2. ESTILO DE CAJAS CLASS ------*/
 .container {
     display: flex;
     text-align: center;
@@ -41,7 +45,6 @@ de que trata el Box Model.
          linear-gradient(to bottom,
           rgba(240, 40, 40, 1) 0%,
           rgba(240, 40, 40, 1) 100%);
-
 }
 
 .box1 {
@@ -65,6 +68,63 @@ de que trata el Box Model.
     margin-left: 50px;
 }
 
+.box_m_1_valor{
+    margin: 100PX;
+}
+.list_small{
+    width: 30px;
+    height: 10px; 
+    display: inline-block;
+}
+.list_small.toBlack{
+    background-color: black;
+}
+.list_small.toAqua{
+    background-color: aqua;
+}
+.list_small.toRed{
+    background-color: red;
+}
+.list_small.toYellow{
+    background-color: yellow;
+}
+
+.box_sin_padding{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    position: relative;
+    margin: 1rem auto;
+}
+.box_con_padding{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: relative;
+    margin: 0 auto;
+    padding: 6px;
+
+    background-clip: content-box, padding-box;
+    background-image:linear-gradient(
+        to bottom,
+         rgb(255, 83, 36) 0%,
+         rgba(255, 83, 36, 1) 100%), 
+         linear-gradient(to bottom,
+          rgb(238, 228, 31) 0%,
+          rgb(242, 228, 29) 100%);
+}
+.box_con_border{
+    width: 150px;
+    height: 100px;
+    background-color: coral;
+    position: relative;
+    margin: 1rem auto;
+    border: 5px solid black;
+}
+/* ----------- 2. <<END>> ESTILO DE CAJAS CLASS -----------*/
+
+
+
 hgroup {
     text-align: center;
 }
@@ -77,12 +137,72 @@ h2 {
 p {
     margin: 1rem;
     text-align: justify;
+    text-transform: lowercase;
+}
+p::first-letter{
+    text-transform:uppercase;
 }
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 hr {
     margin: 1rem 0;
 }
+
+
+
+/* ------ 2. BANDERA ID CLASS ------*/
+
+#bandera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 35rem;
+    height: 15rem;
+    margin: 2rem auto;
+    border: 1px solid gray;
+    box-shadow: 0rem 0rem 3rem 1px rgba(1, 1, 1, 0.5);
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    /* left: 50%;
+    margin: -45px 0 0 -100px; */
+
+    /* position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); */
+
+    /* display: flex;
+    justify-content: center; */
+}
+.ban_size{
+    width: 10rem;
+    height: 3rem;
+}
+.ban_size.ban_1{
+    background-color: #FFCD00;
+
+}
+.ban_size.ban_2{
+    background-color: #003087;
+    
+}
+.ban_size.ban_3{
+    background-color: #C8102E;
+}
+#bandera > h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* ----------- 2. <<END>> BANDERA ID CLASS -----------*/
