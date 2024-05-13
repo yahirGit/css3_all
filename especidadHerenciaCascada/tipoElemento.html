@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de elementos CSS</title>
+    <link rel="stylesheet" href="tipoElemento.css">
+</head>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .enlaces{
+            display: inline-block;
+            text-decoration: none;
+            background: crimson;
+            color: white;
+        }
+        p{
+            text-align: center;
+            margin: 1rem;
+        }
+    </style>
+
+<body>
+
+    <section>
+        <p>Los elementos en linea solo ocupan el espacio del contenido</p>
+        <p>Los elementos en bloque ocupan el 100 % del ancho del documento, y genera un salto de linea</p>
+    </section>
+
+    <nav>
+        <a href="#" class="enlaces">Enlace</a>
+        <a href="#" class="enlaces">Enlace</a>
+        <a href="#" class="enlaces block">Enlace</a>
+        <a href="#" class="enlaces">Enlace</a>
+    </nav>
+
+    <div id="caja" class="caja">
+        <p style="color: blue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam sunt tempore non necessitatibus ea molestias, mollitia minus rerum reprehenderit nam recusandae eius natus excepturi, quasi porro consectetur obcaecati illum maiores.</p>
+    </div>
+    
+</body>
+</html>
