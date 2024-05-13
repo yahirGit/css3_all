@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+.box_1{
+    width: 200px;
+    height: 200px;
+
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: orangered;
+}
+.border{
+    text-align: center;
+}
+hgroup{
+    border-bottom: 3px solid black;
+    width: 50%;
+    margin: 0 auto;
+}

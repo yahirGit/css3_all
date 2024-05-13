@@ -2,16 +2,25 @@
 
 ## Link Recursos
 
-Recursos estéticos 
+Recursos Colores 
   
   `Paleta de colores` : <https://coolors.co/>
   
   `Paleta por nombre de colores` : <https://htmlcolorcodes.com/es/nombres-de-los-colores/>
 
-Medidor de especifidad CSS
+Calculadora de especifidad CSS
 
   `Medidor Especifidad css` : <https://specificity.keegan.st/>
   
-Medidor de especifidad CSS
+Bordes en CSS
 
-  `Medidor Especifidad css` : <https://specificity.keegan.st/>
+  `Generador Border Radius` : <https://border-radius.com/>
+
+  `Generador Box Shadow` : <https://www.cssmatic.com/box-shadow>
+
+Validador de semantica
+
+  `validator w3c` : <https://validator.w3.org/>
+
+  
+
