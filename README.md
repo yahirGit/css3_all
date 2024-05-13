@@ -10,7 +10,7 @@ Recursos Colores
 
 Calculadora de especifidad CSS
 
-  `Medidor Especifidad css` : <https://specificity.keegan.st/>
+  `Medidor Especificidad css` : <https://specificity.keegan.st/>
   
 Bordes en CSS
 
