@@ -22,6 +22,5 @@ Validador de semantica
 
   `validator w3c` : <https://validator.w3.org/>
 
-[here](https://www.geeksforgeeks.org/){target="_blank"}
 
 
