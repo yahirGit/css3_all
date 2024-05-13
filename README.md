@@ -22,7 +22,6 @@ Validador de semantica
 
   `validator w3c` : <https://validator.w3.org/>
 
-<a href="https://www.google.com/" target="_blank">Hello, world!</a>
-
+[here](https://www.geeksforgeeks.org/){:target="_blank"}
 
 
