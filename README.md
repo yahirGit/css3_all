@@ -7,6 +7,9 @@ Recursos Colores
   `Paleta de colores` : <https://coolors.co/>
   
   `Paleta por nombre de colores` : <https://htmlcolorcodes.com/es/nombres-de-los-colores/>
+  
+  `Generar colores con imagenes Canva` : <https://www.canva.com/colors/color-palette-generator/>
+
 
 Calculadora de especifidad CSS
 
@@ -22,5 +25,7 @@ Validador de semantica
 
   `validator w3c` : <https://validator.w3.org/>
 
+Remover fondos de imagenes
 
+  `Remover fondos de imagenes` : <https://www.remove.bg/es>
 

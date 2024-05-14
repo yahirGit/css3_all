@@ -1,30 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bordes es CSS</title>
     <link rel="stylesheet" href="border.css">
 </head>
+
 <body>
-    
+
     <section class="border">
         <h1>CSS bordes</h1>
         <hgroup>
             <h2>Bordes en CSS</h2>
-            <h3>Border Shorthand</h3>
+            <p>Border Shorthand</p>
         </hgroup>
         <figure>
-            <figcaption>Fruit</figcaption>
+            <figcaption>Tipos de Bordes CSS</figcaption>
             <ol>
-              <li>Apple</li>
-              <li>Pear</li>
-              <li>Orange</li>
+                <li>dotted</li>
+                <li>inset</li>
+                <li>dashed</li>
+                <li>solid</li>
+                <li>double</li>
+                <li>groove</li>
             </ol>
-          </figure>
-        <div class="box_1"></div>
+        </figure>
+        <div class="box box_1"></div>
+        <p>
+            la propiedad border tiene la caracteristica de ser un <strong>ShortHand</strong> que permite
+            definir el borde para cada lado del modelo de caja con un tamaño y estilo diferente.
+        </p>
+
+        <pre>
+            <code>
+                border-width: 10px 25px 5px 15px;
+                border-style: solid dotted inset double;
+                border-color: indigo blue darkolivegreen darksalmon;
+            </code>
+        </pre>
+        <div class="box box_2"></div>
+        <p>
+            Como en este ejemplo anteior cada borde del modelo de caja tiene un estilo diferente.
+        </p>
+        <p>tambien se puede ser mucho mas especifico en definir el estilo de un borde pudiendo hacer lo siguiente.</p>
+        <pre>
+            <code>
+                border-top-width: 10px;
+                border-top-style: double;
+                border-top-color: black;
+            </code>
+        </pre>
+        <div class="box box_3">
+        </div>
+        <p>
+            Como podemos ver en este ejemplo usamos una forma mas especifica para definir el borde superior de la caja. Esto tambien es posible en cada lado del modelo de caja. 
+        </p>
     </section>
 
-    
+    <section class="border border_radius">
+
+        <h1>CSS border radius</h1>
+        <hgroup>
+            <h2>Border radius example</h2>
+            <p>
+                La propiedad border radius tiene la caracteristica de ser un <strong>ShortHand</strong>
+                lo que permite ser mas especifico para definir el border de cada lado del modelo de caja.
+            </p>
+        </hgroup>
+        <pre>
+            <code>
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+            </code>
+        </pre>
+        <img src="woman.jpg" alt="woman" class="img">
+        <p>
+            Para redondear completamente una caja el tamaño de la misma debe ser proporcional, es decir el mismo alto y ancho debemos definir su tamaño, como veremos a continuación.  
+        </p>
+        <pre>
+            <code>
+                border-radius: 50%;
+            </code>
+        </pre>
+        <figure class="card">
+            <img src="woman.jpg" alt="woman" class="img_2">
+            <h3>Alejandra [CEO Google]</h3>
+            <a class="btn_card" href="#">Entrar</a>
+        </figure>
+
+    </section>
+
+    <section class="box_shadow">
+        <h1>CSS Box Shadow</h1>
+        <hgroup>
+            <h2>Box shadow</h2>
+            <p>
+                La propiedad box shadow permite crear sombras en los diferentes elementos.
+            </p>
+        </hgroup>
+        <img src="spidy.jpg" alt="spiderman" class="spider">
+        <p>
+            La propiedad box-shadow cuenta con los siguientes valores.
+        </p>
+        <pre>
+            <code>
+                box-shadow: h-offset v-offset blur spread color;
+            </code>
+        </pre>
+        <p>
+            Donde explicamos acontinuación cada una de ellas.
+        </p>
+        <ul id="list_box_shadow">
+            <li><b>offset-x:</b> Define el desplazamiento de la sombra en el eje x, pude tener valores negativos.</li>
+            <li><b>offset-y:</b> Define el desplazamiento de la sombra en el eje y, puede tener valores negativos.</li>
+            <li><b>blur radius:</b> Define la difuminacion de la sombra entre mayor sea el valor mas grande, suave y ligera sera la sombra.</li>
+            <li><b>spread radius:</b> Define que la sombra se expanda y crezca, permite valores negativos.</li>
+            <li><b>color:</b> define el color de la sombra.</li>
+        </ul>
+        <div class="example_box_shadow">
+            
+        </div>
+        <a href="practicaBoxShadow.html" class="btn_practica">Ir a practica</a>
+    </section>
+
 </body>
 </html>

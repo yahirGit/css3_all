@@ -1,5 +1,12 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
 .box_1{
     width: 200px;
@@ -8,12 +15,176 @@
     margin: 0 auto;
     margin-top: 1rem;
     background: orangered;
+
+    border: 10px dotted indigo;
 }
+.box_2{
+    
+    background-color: tomato;
+
+    border-width: 10px 25px 5px 15px;
+    border-style: solid dotted inset double;
+    border-color: indigo blue darkolivegreen darksalmon;
+
+    margin-bottom: 1rem;
+}
+.box_3{
+    background-color: orange;
+    border-top-width: 2rem;
+    border-top-style: double;
+    border-top-color: black;
+    margin-bottom: 1rem;
+}
+
+
 .border{
     text-align: center;
+    border-bottom: 3px solid black;
+    margin: 1rem 0;
 }
 hgroup{
     border-bottom: 3px solid black;
     width: 50%;
     margin: 0 auto;
 }
+figure{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 3rem;
+    margin: 5rem;
+}
+figure ol li{
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+ol li:nth-child(1){
+    border: 3px dotted black;
+}
+ol li:nth-child(2){
+    border: 3px inset black;
+}
+ol li:nth-child(3){
+    border: 3px dashed black;
+}
+ol li:nth-child(4){
+    border: 3px solid black;
+}
+ol li:nth-child(5){
+    border: 3px double black;
+}
+ol li:nth-child(6){
+    border: 3px groove black;
+}
+pre{
+   text-align: left;
+    
+}
+p{
+    margin: 1rem 1rem;
+    text-align: justify;
+}
+p::first-letter{
+    text-transform: uppercase;
+}
+
+
+/* ------ 2. BORDER RADIUS CLASS ------*/
+
+.img{
+    display: block;
+    width: 200px;
+    margin: 80px auto;
+    border: 10px groove brown;
+
+    border-radius: 10px 10px 30px 30px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; */
+}
+.card{
+    border: 1px solid black;    
+    width: 400px;
+    height: auto;
+    margin: 1rem auto;
+    padding: 2rem 0;
+}
+.card > h3{
+    font-size: 1rem;
+    text-align: center;
+}
+.img_2{
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /*Comprobar esta propiedad */
+    margin: 2rem auto 5px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px -5px rgba(0,0,0, .75);
+}
+.card .btn_card{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: crimson;
+    color: white;
+    width: 50%;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    margin: 1rem auto;
+}
+
+/* ----------- 2. <<END>> BORDER RADIUS CLASS -----------*/
+
+
+
+/* ------ 2. BOX SHADOW CLASS ------*/
+.box_shadow{
+    text-align: center;
+}
+.spider{
+    display: block;
+    width: 400px;
+    margin: 2rem auto;
+    /* box-shadow: 0px 10px 40px -14px rgba(0,0,0, .25); */
+    box-shadow: 3px 3px 10px rgba(0,0,0, .75);
+}
+#list_box_shadow{
+    text-align: left;
+    margin: 0rem 2rem;
+}
+.example_box_shadow{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    background: tomato;
+
+    /* box-shadow: h-offset v-offset blur spread color; */
+    box-shadow: 100px 100px 0 0 aqua,
+                100px 0 indigo,
+                0 100px steelblue;
+}
+.btn_practica{
+    
+    display: block;
+    margin: 2rem auto;
+    text-decoration: none;
+    background-color: chartreuse;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: center;
+    width: 50%;
+    padding: 2rem;
+}
+.btn_practica:hover{
+    border: 1px solid black;
+    box-shadow: 3px 3px 40px -10px rgba(0,0,0, .75);
+}
+
+/* ----------- 2. <<END>> BOX SHADOW CLASS -----------*/
