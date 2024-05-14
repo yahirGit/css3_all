@@ -70,6 +70,12 @@ body{
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
+.elemento {
+    width:200px;
+    background:red;
+    overflow:scroll;
+    margin: 2rem;
+  } 
 
 .goku{
     display: block;
@@ -77,9 +83,10 @@ body{
     margin: 30px auto;
     /*drop-shadow: offset-x, offset-y blur color;
     */filter: drop-shadow(0 0 20px gold);
-    -webkit-filter: ;
+    -webkit-filter: drop-shadow(0 0 20px gold);
 }
 .img{
     filter: drop-shadow(0 0 20px crimson);
     -webkit-filter: drop-shadow(0 0 20px crimson);
+    
 }
