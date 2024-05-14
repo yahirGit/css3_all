@@ -11,7 +11,7 @@ Recursos Colores
   `Generar colores con imagenes Canva` : <https://www.canva.com/colors/color-palette-generator/>
 
 
-Calculadora de especifidad CSS
+Calculadora de especificidad CSS
 
   `Medidor Especificidad css` : <https://specificity.keegan.st/>
   
