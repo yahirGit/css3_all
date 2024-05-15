@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('../fondos_gradientes/img/textura.png');
+    background-repeat: repeat;
+}
+.container{
+    width: 50%;
+    height: 300px;
+    background: transparent;
+    background-color: #c6c6c6;
+    background-image: url('../fondos_gradientes/img/cloud.png');
+    background-repeat: no-repeat;
+    /* background-image: url('../fondos_gradientes/img/spidy.png'), url('../fondos_gradientes/img/sun.png'); */
+
+    margin: 30px auto;
+}
