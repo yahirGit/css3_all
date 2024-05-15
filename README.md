@@ -29,3 +29,10 @@ Remover fondos de imagenes
 
   `Remover fondos de imagenes` : <https://www.remove.bg/es>
 
+Generador de Gradientes
+
+  `Generar gradientes` : <https://cssgradient.io/>
+  
+  `Web Gradients` : <https://webgradients.com/>
+  
+  `uigradients` : <https://uigradients.com/#Bluelagoo>
