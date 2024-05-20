@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+.background.section_1{
+    background-image: url('../landingpage_1/assets/img/hero.jpg');
+    border-top: 0.1px solid transparent;
+}
+.section_1 h2{
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+
+    text-align: center;
+    line-height: 100px;
+
+    margin-top: calc(50vh - 50px);
+    
+}
+.text{
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.text h2{
+    
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.text p{
+    font-weight: 300;
+}
+.section_2{
+    height: 600px;
+    background-image: url('../landingpage_1/assets/img/fondo1.png');
+
+}
+.section_2{
+    color: white;
+    text-align: center;
+    line-height: 600px;
+    text-transform: capitalize;
+}
+.background h3{
+    font-size: 3rem;
+    line-height: inherit;
+}
+.section_3{
+    background-image: url('../landingpage_1/assets/img/fondo2.png');
+    text-align: center;
+    line-height: 100vh;
+    color: white;
+}
