@@ -1,0 +1,62 @@
+.top{
+    margin: 30px 0;
+    float: left;
+    background: red;
+    width: 100%;
+    display: none;
+}
+.bottom{
+    margin: 20px 0;
+    float: left;
+    background: blue;
+    width: 100%;
+    display: none;
+}
+body{
+    background-color: #9ab1f6;
+    font-family: Arial;
+}
+.container{
+    background-color: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 1rem;
+    box-shadow: 3px 3px 10px rgba(0,0,0, 0.2);
+}
+h1{
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(15,65,159, .5);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+p{
+    text-align: justify;
+    word-spacing: -5px;
+    letter-spacing: 0.01rem;
+    line-height: 30px;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+}
+
+/* ------ 2. UNIDADES DE MEDIDA CLASS ------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.opinion{
+    padding: 2em;
+    width: 70%;
+    margin: 40px auto;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, .5);
+}
+.title{
+    font-size: 1rem;
+}
+.text{
+    font-size: 20px;
+
+}
+/* ----------- 2. <<END>> UNIDADES DE MEDIDA CLASS -----------*/
