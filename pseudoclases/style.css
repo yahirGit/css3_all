@@ -1,0 +1,135 @@
+:root{ /*Selecciona la raiz del documento html <html></html>*/
+    background: steelblue;
+    /*Nomralmente se usa para definir todas las variables de CSS*/ 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.enlace{
+    display: block;
+    background: tomato;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 3px solid #ebd1db;
+}
+.enlace:link{
+    background-color: burlywood;
+    color: black; 
+}
+.enlace:visited{
+    background: crimson;
+}
+.enlace:hover{
+    text-decoration: underline;
+    padding: 40px 20px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.enlace:active{
+    background-color:steelblue;
+    color: white;
+}
+
+/* ------ 2. TARGET CLASS ------*/
+.event{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: crimson;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+/*--- PseudoClase active de interacción --*/
+.event:active{
+    padding: 23px;
+}
+#objetivo{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: steelblue;
+}
+#objetivo:target{
+    background: black;
+    margin: 0 auto;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
+
+/* ----------- 2. <<END>> TARGET CLASS -----------*/
+
+/* ------ 2. STYLES FORM CLASS ------*/
+.form{
+    width: 80%;
+    margin: 1rem auto;
+    background: #c9c9c9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    padding: 30px;
+}
+.form__title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    display: block;
+}
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+
+}
+input[type="checkbox"]:checked + label {
+    background: crimson;
+    color: white;
+
+}
+input:focus{
+    background: rgba(36, 131, 162, 0.5);
+}
+.form:focus-within{
+    background: rgba(36, 131, 162, 0.5);
+    border: 6px solid black;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+/*Si el elemento html tiene la propuedad contenteditable se puede establecer la pseudoclase :focus*/
+h2:focus{
+    background: crimson;
+    border: 1px solid black;
+    outline: none;
+}
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+h3:not(.title){
+    color: darkgoldenrod;
+}
+
+/* ----------- 2. <<END>> STYLES FORM CLASS -----------*/

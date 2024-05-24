@@ -36,3 +36,6 @@ Generador de Gradientes
   `Web Gradients` : <https://webgradients.com/>
   
   `uigradients` : <https://uigradients.com/#Bluelagoo>
+
+Iconos con licencia libre
+  `boxicons` : <https://boxicons.com/>

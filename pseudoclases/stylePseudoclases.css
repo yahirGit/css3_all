@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+.box{
+    background: steelblue;
+    width: 55px;
+    height: 55px;
+    margin: 10px 0;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 55px;
+    color: #fff;
+    font-weight: bold;
+}
+.container{
+    border: 4px solid indigo;
+    margin-left: -5px;
+}
+
+
+
+/* ------ 2. PSEUDOCLASS Only-of-tyoe CLASS ------*/
+/* .box:only-of-type{
+    background: tomato;
+} */
+/*El primer elemento de su tipo NO a sus hermanos*/
+/* .box:first-of-type{ 
+    background: lightsalmon;
+} */
+/*El segundo elemento de su tipo NO a sus hermanos*/
+/* .box:last-of-type{
+    background-color: lightseagreen;
+} */
+/* Todos los segundos elementos de su tipo*/
+/*valores odd= impares event=pares n=0 expresiones matematicas con n 2n = 2*n */
+/* .box:nth-of-type(2n+1){
+    background: green;
+} */
+
+/*Comienza desde los ultimos elementos*/
+/* .box:nth-last-of-type(1){
+    background: lightsalmon;
+} */
+
+/*Solo a los elementos que no tenga hermanos*/
+/* .box:only-child{
+    background: blue;
+} */
+
+/*Seleccciona al primer elemento de su padre*/
+/* .box:first-child{
+    background: tomato;
+} */
+/*Selecciona a los ultimos elementos de su padre*/
+/* .box:last-child{
+    background: black;
+} */
+
+/* .box:nth-child(1){
+    background: crimson;
+} */
+/*Podemos elegir a los hijos de un elemento por su posicion*/
+.container :nth-child(1){
+    background: blue;
+}
+
+/* ----------- 2. <<END>> PSEUDOCLASS Only-of-tyoe CLASS -----------*/
