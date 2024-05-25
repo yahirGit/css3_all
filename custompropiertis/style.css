@@ -1,0 +1,71 @@
+:root{
+    /*Solo se indican los valores de las propiedades no la propiedad como tal*/
+    --color_heading: darkgreen;
+    --card_shadow: 6px 6px 10px rgba(48, 19, 145, 0.5);
+    --gradient: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    --cta_gradient:linear-gradient(to top, #992970 0%, #fbc2eb 100%); 
+    --color_black: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbb2fb;
+    min-height: 100vh;
+    background-image: var(--gradient);
+}
+.card{
+    background: #fff;
+    width: 300px;
+    margin: 30px auto;
+    padding: 30px 20px;
+    box-shadow: var(--card_shadow);
+}
+.card__title{
+    font-size: 30px;
+    color: var(--color_heading);
+    margin-bottom: 30px;
+}
+.card__cta{
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    color: var(--color_black, white); /*Cuando se separa con una coma podemos añadir un valor en caso de que no encuentre la variable*/
+    text-decoration: none;
+    font-weight: bold;
+    background-image: var(--cta_gradient);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.card2{
+    background: #fff;
+    width: 300px;
+    margin: 30px auto;
+    padding: 30px 20px;
+    box-shadow: var(--card_shadow);
+}
+.card2__title{
+    font-size: 30px;
+    color: var(--color_heading);
+    margin-bottom: 30px;
+}
+.card2__cta{
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
