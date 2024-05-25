@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu CSS position</title>
+
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .section{
+            height: 100vh;
+            background-attachment: fixed;
+            text-shadow: 2px 2px 5px rgba(15, 12, 12, 0.5);
+        }
+        .nav{
+            position: fixed;
+            background-color: purple;
+            height: 8vh;
+            padding-top: 0 50px;
+            text-align: right;
+            top: 0;
+            width: 100%;
+        }
+        .enlaces{
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+            line-height: 8vh;
+        }
+        .enlaces:hover{
+            background-color: white;
+            color: purple;
+        }
+        section:nth-of-type(1){
+            background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+        }
+        section:nth-of-type(2){
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        }
+        section:nth-of-type(3){
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        }
+        .title{
+            line-height: 100vh;
+            text-align: center;
+            font-size: 3rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="#inicio" class="enlaces">Inicio</a>
+        <a href="#acerca-de" class="enlaces">Acerca de</a>
+        <a href="#contacto" class="enlaces">Contacto</a>
+    </nav>
+
+    <section class="section" id="inicio">
+        <h2 class="title">Inicio</h2>
+    </section>
+    <section class="section" id="acerca-de">
+        <h2 class="title">Acerca de</h2>
+    </section>
+    <section class="section" id="contacto">
+        <h2 class="title">Contacto</h2>
+    </section>
+    
+</body>
+</html>

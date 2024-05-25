@@ -39,3 +39,6 @@ Generador de Gradientes
 
 Iconos con licencia libre
   `boxicons` : <https://boxicons.com/>
+
+SVG generator Wavy Transitions Between sections
+`smooth.ie` : <https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections>

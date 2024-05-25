@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElementos CSS</title>
+
+    <link rel="stylesheet" href="">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightsalmon;
+        }
+        .card{
+            position: relative;
+            width: 300px;
+            margin: 3rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: -20px -20px 0px 0px #f3efef38;
+            border-radius: 10px;
+        }
+        .card__title{
+            font-size: 1.5rem;
+            text-align: left;
+            font-weight: bold;
+            font-family: sans-serif;
+            border-bottom: 3px solid salmon;
+            padding-bottom: 7px;
+        }
+
+        .card__text{
+            margin: 5px;
+        }
+
+        /*Permite darle estilo a un texto seleccionado con el puntero del mouse*/
+        p::selection{
+            background: crimson;
+            color: white;
+        }
+        /* p::first-line{
+            text-transform: uppercase;
+            color: chartreuse;
+            background: black;
+        } */
+        .card__title::first-letter{
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        .card__text::before{
+            /* content: " ";
+            border-left: 3px solid;
+            border-top: 3px solid;
+            padding-left: 10px; */
+            content: "";
+            position: absolute;
+            border: 1px solid black;
+            border-top: 15px solid #7d0000;
+            border-left: 16px solid yellow;
+            box-shadow: 0 0 1px 1px rgba(1, 1, 1, 0.5);
+            height: 0;
+            width: 0;
+            bottom: 158px;
+            left: 20px;
+            right: 0;
+        }
+        .card__text::after{
+            content: " ";
+            border-right: 3px solid;
+            border-bottom: 3px solid;
+            padding-right: 10px;
+        }
+
+        ul{
+            counter-reset: contador; /*Iniciar contador*/
+        }
+        li{
+            list-style: none;
+            padding: 0;
+            margin-top:3px;
+        }
+        li::before{
+            content: counter(contador);
+            counter-increment: contador;
+            background: black;
+            width: 30px;
+            height: auto;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2 class="card__title">Aprende CSS3</h2>
+        <p class="card__text">
+            Soy yahir
+        </p>
+
+        <ul>
+            <li>Box model</li>
+            <li>Pseudoelementos</li>
+            <li>PseudoClases</li>
+            <li>Selectores</li>
+        </ul>
+    </div>
+
+    
+    
+</body>
+</html>

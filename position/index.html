@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: arial,helvetica,sans-serif;
+        }
+        .container{
+            border: 5px solid red;
+            margin: 1rem auto;
+            position: relative;
+        }
+        .box{
+            background-color: darkcyan;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            margin: 1rem;
+        }
+        .static{
+            /*No permite desplazar el elemento*/
+            position: static;
+        }
+        .relative{
+            /*Elemento posicionado*/
+            /*Se pueden mover con top right bottom left*/
+            /*Se desplaza a su posicion original*/
+            /*Reserva su espacio en el flujo de elementos*/
+            position: relative;
+            background: crimson;
+            /* top: 50%;
+            left: 50%;
+            right: 1px;
+            bottom: 1rem; */
+        }
+        .absolute{
+            /*Pierde su espacio en el flujo*/
+            /*Se posiciona con el body o en base a su padre*/
+            position: absolute;
+            background-color: purple;
+            top: 0;
+            left: 50px;
+            /**/
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box static">Static</div>
+        <div class="box relative">Relative</div>
+        <div class="box absolute">Absolute</div>
+        <div class="box fixed">Fixed</div>
+    </div>
+    
+</body>
+</html>
