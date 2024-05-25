@@ -38,12 +38,15 @@ Generador de Gradientes
   `uigradients` : <https://uigradients.com/#Bluelagoo>
 
 Iconos con licencia libre
+
   `boxicons` : <https://boxicons.com/>
 
 SVG generator Wavy Transitions Between sections
+
   `smooth.ie` : <https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections>
 
 Extensions VS code
 
 Documentation Emmet - cheat Sheet
+
   `docs.emmet.io` : <https://docs.emmet.io/cheat-sheet/>
