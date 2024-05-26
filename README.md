@@ -2,7 +2,13 @@
 
 ## Link Recursos
 
-Recursos Colores 
+Documentacion CSS
+
+  `W3C` : <https://www.w3.org/Style/CSS/specs.en.html>
+  
+  `Developer Mozilla` : <https://developer.mozilla.org/es/docs/Learn/CSS>
+
+Recursos Colores
   
   `Paleta de colores` : <https://coolors.co/>
   
