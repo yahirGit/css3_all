@@ -120,3 +120,67 @@ body{
 /* ----------- 2. <<END>> HERO MAIN CLASS -----------*/
 
 
+/* =================================================== FOR HERO TABLET*/
+/* ------ 2. MEDIA QUERIES CLASS ------*/
+@media only screen and (max-width: 900px){
+    .hero__main{
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    :root{
+        --height-nav: 100px;
+        
+    }
+    .nav__container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .nav__links{
+        /*Para conseguir que el efecto hover use el 100% del height*/
+        height: 0;
+        line-height: 0;
+        display: flex;
+    }
+    .hero__picture{
+        order: -1;
+    }
+    .hero__img{
+        width: 80%;
+    }
+    .hero__texts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .hero__title{
+        font-size: 2.5rem;
+    }
+    .hero__paragraph{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+
+    .hero__picture{
+        order: -1;
+    }
+    .hero__img{
+        width: 100%;
+    }
+    .hero__texts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .hero__title{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+  }
+
+/* ----------- 2. <<END>> MEDIA QUERIES CLASS -----------*/
+
