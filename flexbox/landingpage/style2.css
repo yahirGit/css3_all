@@ -1,0 +1,57 @@
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox container for navigation */
+.nav {
+    background-color: #333;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px; /* Adjust as needed */
+}
+
+.nav__item {
+    position: relative; /* Needed for the pseudo-element */
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    padding: 20px; /* Padding to make the hover effect look better */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Make the link take the full height of the list item */
+}
+
+/* Hover effect */
+.nav__link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the hover background color */
+    transition: height 0.3s ease;
+    z-index: -1;
+}
+
+.nav__link:hover::before {
+    height: 100%;
+}
+
+.nav__link:hover {
+    color: #fff; /* Adjust the color if needed */
+}

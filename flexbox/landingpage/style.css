@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local("Poppins"),
+      /* url("../landingpage/fonts/Poppins-Regular.woff2") format("woff2"),
+      url("../landingpage/fonts/Poppins-Regular.woff") format("woff"), */
+      url("../landingpage/fonts/Poppins-Regular.ttf") format("truetype");
+  }
+  :root{
+    --height-nav: 70px;
+    --color-hex-nav: #143d64;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /*Esconder todo lo que salga de la clase .container*/
+
+}
+
+/* ------ 2. NAVBAR CLASS ------*/
+.nav{
+    background: var(--color-hex-nav);
+    height: var(--height-nav);
+    color: #fff;
+}
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__links{
+    /*Para conseguir que el efecto hover use el 100% del height*/
+    display: flex;
+    height: 100%;
+    line-height: var(--height-nav);
+}
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1em;
+    padding: 0 3px;
+}
+.nav__link:hover{
+    cursor: pointer;
+    font-weight: 700;
+    background: white;
+    color: var(--color-hex-nav);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+/* ----------- 2. <<END>> NAVBAR CLASS -----------*/
+
+
+
+/* ------ 2. HERO MAIN CLASS ------*/
+.hero__main{
+    display: flex;
+    height: calc(100vh - var(--height-nav));/*Calcular la altura*/
+    justify-content: center;
+    align-items: center;
+    min-height: 600px; /*Para moviles*/
+}
+.hero__texts{
+    flex: 1;
+}
+.hero__picture{
+    flex: 1;
+}
+.hero__img{
+    width: 100%; /*es necesario para que la img ocupe todo el espacio de su padre*/
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+.hero__title{
+    color: rgba(244, 228, 228, 0.994);
+    text-shadow: 2px 2px 3px rgba(1, 1, 1, 0.5);
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.hero__paragraph{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.cta{
+    display: inline-block;
+    color: #fff;
+    background: #6c63ff;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin-top: 1.5em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+.cta:hover{
+    background: var(--color-hex-nav);
+    font-weight: 900;
+    
+}
+/* ----------- 2. <<END>> HERO MAIN CLASS -----------*/
+
+
