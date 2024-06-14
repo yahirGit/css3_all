@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --color-price: #26293A;
+    --color-features: #9C9191;
+    --color-btn: #fff;
+    --color-blanco: #ffffff;
+    --color-background-1: #876bc5;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(to top, var(--color-price) 50%, white 50%);
+    height: 100vh;
+    align-items: center;
+}
+
+/* ------ 2. CARDS CLASS ------*/
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+}
+.card__item{
+    width: 30%;
+    max-width: 350px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-align: center;
+    padding: 40px 0;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card__plan{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--color-price);
+}
+.card__price{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--color-price);
+}
+.card__features{
+    font-size: 1rem;
+    color: var(--color-features);
+    margin: 2rem 0;
+}
+.card__item--active{
+    background-color: #5575FF;
+    --color-price: #ffffff;
+    --color-features: #ffffff;
+    --color-btn: #26293A;
+}
+.card__list{
+    text-transform: capitalize;
+    list-style: none;
+    margin: auto;
+}
+.card__list__item{
+    color: var(--color-features);
+    margin: 1rem 0;
+}
+.card__list__item:nth-last-child(1){
+    margin-bottom: 50px;
+}
+.cta{
+    display: inline-block;
+    background-color: var(--color-price);
+    text-decoration: none;
+    padding: 20px 0;
+    width: 50%;
+    margin: 0 auto;
+    color: var(--color-btn);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+/* ----------- 2. <<END>> CARDS CLASS -----------*/
+
+/* ------ 2. QUERIES CLASS ------*/
+@media screen and (max-width: 800px){
+    .card__item{
+        width: 45%;
+        margin: 2rem 0;
+    }
+    body{
+        background: #ffffff;
+    }
+}
+@media screen and (max-width: 500px){
+    .card__item{
+        width: 90%;
+        margin: 2rem 0;
+    }
+    body{
+        background: #ffffff;
+    }
+}
+
+
+/* ----------- 2. <<END>> QUERIES CLASS -----------*/
