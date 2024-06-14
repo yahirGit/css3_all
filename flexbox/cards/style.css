@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: #f2f2f2;
+}
+
+/* ------ 2. CARDS CLASS ------*/
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.card__item{
+    background-color: #fff;
+    width: 30%;
+    min-height: 600px;
+    overflow: hidden;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 0px 32px -16px rgba(0,0,0,0.5);
+}
+.card__texts{
+    flex-grow: 1;
+}
+.card__figure{
+    height: 50%;
+}
+.card__img{
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.card__paragraph{
+    padding: .5em 0;
+}
+.cta{
+    display: inline-block;
+    background-color: #6c63ff;
+    margin-top: 1rem;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------- 2. <<END>> CARDS CLASS -----------*/
