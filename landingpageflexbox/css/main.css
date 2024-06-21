@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/*===========================
+        STYLE GUIDE
+1. :ROOT
+2. GENERAL STYLES
+3. HERO STYLE
+===========================*/
+
+/* ------ 1. :ROOT CLASS ------*/
+:root{
+    --padding-container: 80px 0;
+    --color-primary: #f77062;
+    --color-secondary: #1b998b;
+    --color-bg:#fafafa;
+    --align-title: center;
+    --box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+/* ----------- 2. <<END>> :ROOT CLASS -----------*/
+body{
+    font-family: "Lato", sans-serif;
+}
+*{
+    /* outline: 3px solid red; */
+}
+.container{
+    max-width: 1200px;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    padding: var(--padding-container);
+}
+
+
+
+
+/* ------ 2. HERO STYLE CLASS ------*/
+.hero{
+    --padding-container: 0;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    height: 100vh;
+}
+.hero__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    height: 100%;
+}
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero__img{
+    width: 45%;
+    text-align: center;
+    margin: 0;
+}
+.hero__picture{
+    height: 100%;
+    width: 100%;   
+}
+.hero__text{
+    width: 45%;
+    color: #fff;
+}
+.hero__title{
+    font-size: 4rem;
+}
+.hero__copy{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+/* ----------- 2. <<END>> HERO STYLE CLASS -----------*/
+
+
+
+/* ------ 2. ABOUT CLASS ------*/
+.title{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: var(--align-title);
+}
+.about__main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about__text{
+    width: 50%;
+    text-align: left;
+}
+.about__img{
+    width: 45%;
+    text-align: center;
+    margin: 0;
+}
+.about__picture{
+    max-width: 80%;
+}
+.about__paragraph{
+    line-height: 1.8rem;
+}
+.cta{
+    display: inline-block;
+    background: var(--color-primary);
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+
+/* ----------- 2. <<END>> ABOUT CLASS -----------*/
